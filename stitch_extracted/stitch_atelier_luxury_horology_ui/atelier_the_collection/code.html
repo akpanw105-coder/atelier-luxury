@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-primary-fixed": "#261900", "on-error": "#690005", "surface": "#131315", "on-background": "#e5e1e4", "tertiary-container": "#a6a5a0", "surface-container-high": "#2a2a2c", "on-secondary-fixed-variant": "#44474b", "outline": "#9a8f80", "tertiary-fixed-dim": "#c8c6c1", "error": "#ffb4ab", "secondary-fixed": "#e0e2e7", "surface-container": "#201f22", "on-error-container": "#ffdad6", "inverse-primary": "#775a19", "background": "#131315", "primary": "#e9c176", "on-tertiary-fixed-variant": "#474743", "on-primary-fixed-variant": "#5d4201", "primary-container": "#c5a059", "secondary-container": "#46494d", "tertiary-fixed": "#e4e2dd", "on-primary-container": "#4e3700", "surface-container-low": "#1c1b1e", "inverse-surface": "#e5e1e4", "on-secondary": "#2d3135", "on-tertiary": "#30312d", "outline-variant": "#4e4639", "surface-bright": "#39393b", "primary-fixed": "#ffdea5", "on-tertiary-fixed": "#1b1c18", "on-secondary-container": "#b6b8bd", "tertiary": "#c8c6c1", "error-container": "#93000a", "on-surface": "#e5e1e4", "inverse-on-surface": "#313032", "on-primary": "#412d00", "on-surface-variant": "#d1c5b4", "surface-container-lowest": "#0e0e10", "secondary": "#c4c6cb", "secondary-fixed-dim": "#c4c6cb", "surface-container-highest": "#353437", "surface-dim": "#131315", "surface-tint": "#e9c176", "primary-fixed-dim": "#e9c176", "on-tertiary-container": "#3b3b37", "surface-variant": "#353437", "on-secondary-fixed": "#191c20" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "margin-tablet": "2.5rem", "margin": "4rem", "gutter-mobile": "1rem", "space-xl": "5rem", "space-md": "1.5rem", "space-sm": "0.75rem", "margin-mobile": "1.5rem", "space-xs": "0.375rem", "space-lg": "3rem", "gutter": "2rem" }, fontFamily: { "label-caps-sm": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Playfair Display"], "display-hero-mobile": ["Playfair Display"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Playfair Display"], "headline-md": ["Playfair Display"], "label-caps-lg": ["Plus Jakarta Sans"], "display-hero": ["Playfair Display"], "body-sm": ["Plus Jakarta Sans"], "headline-lg": ["Playfair Display"], "caption-specs": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "title-editorial": ["Playfair Display"] }, fontSize: { "label-caps-sm": ["0.6875rem", { "lineHeight": "0.875rem", "letterSpacing": "0.25em", "fontWeight": "600" }], "headline-lg-mobile": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" }], "display-hero-mobile": ["2.75rem", { "lineHeight": "3.25rem", "letterSpacing": "-0.01em", "fontWeight": "400" }], "body-md": ["0.9375rem", { "lineHeight": "1.625rem", "letterSpacing": "0.01em", "fontWeight": "300" }], "headline-sm": ["1.5rem", { "lineHeight": "2rem", "letterSpacing": "0.01em", "fontWeight": "500" }], "headline-md": ["2rem", { "lineHeight": "2.5rem", "letterSpacing": "0em", "fontWeight": "400" }], "label-caps-lg": ["0.75rem", { "lineHeight": "1rem", "letterSpacing": "0.2em", "fontWeight": "500" }], "display-hero": ["4.5rem", { "lineHeight": "5rem", "letterSpacing": "-0.02em", "fontWeight": "400" }], "body-sm": ["0.8125rem", { "lineHeight": "1.375rem", "letterSpacing": "0.015em", "fontWeight": "400" }], "headline-lg": ["3rem", { "lineHeight": "3.5rem", "letterSpacing": "-0.01em", "fontWeight": "400" }], "caption-specs": ["0.6875rem", { "lineHeight": "1rem", "letterSpacing": "0.08em", "fontWeight": "400" }], "body-lg": ["1.125rem", { "lineHeight": "1.875rem", "letterSpacing": "0.01em", "fontWeight": "300" }], "title-editorial": ["1.25rem", { "lineHeight": "1.75rem", "letterSpacing": "0.02em", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface antialiased flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-margin-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><button aria-label="Open Menu" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">menu</span></button><div class="flex flex-col"><span class="font-label-caps-sm text-label-caps-sm text-primary tracking-[0.25em] uppercase">ATELIER</span><span class="font-caption-specs text-caption-specs text-on-surface-variant truncate max-w-[130px]">Craftsmanship</span></div></div><div class="flex items-center gap-space-xs"><button aria-label="Search Archive" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[20px]">search</span></button><button aria-label="Acquisitions Bag" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors relative"><span class="material-symbols-outlined text-[20px]">shopping_bag</span><span class="absolute top-2.5 right-2 w-2 h-2 rounded-full bg-primary ring-2 ring-surface-container-lowest"></span></button><div class="w-11 h-11 flex items-center justify-center pl-1"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-1 ring-outline-variant/30" src="https://lh3.googleusercontent.com/aida/AEtjO1WIoOfrjnkzzkgoJpPlq7kGfnJJ4Na7F-rkC5h-DZBchIHrNPwrW5prcVLGFZAyUQ6Pgu9ufSYVPz19lg6zI5ff5Rk7X5eWP7zVLZ_45PGC2tEwiFvRW1Z2D_GfE5bMg2Ht4E6maQvWKOjN03km9_MEoK3t5IGduue6mGZxjoT5lLw5LqaqK9H9oDA1YwodGDxRdDQOCFuhCHP4TBGwOV6Ffe_lKa7z1WQ3Y_AxxjQY9O_SCMsIPzWx4Dum"/></div></div></div></header><main class="flex flex-col relative w-full pt-16 bg-surface"><div class="flex flex-col w-full text-on-surface">
+<!-- Editorial Hero Section -->
+<section class="w-full px-margin-mobile pt-space-md pb-space-sm flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-xs text-primary font-label-caps-sm text-label-caps-sm uppercase tracking-widest">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span>Geneva Horological Vault</span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight mt-1">
+      THE COLLECTION
+    </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-sm">
+      Curated mechanical creations engineered with uncompromising mastery, rare materials, and hand-finished calibres.
+    </p>
+<!-- Quick Stat Badges Strip -->
+<div class="flex items-center gap-space-sm pt-space-xs overflow-x-auto no-scrollbar py-1">
+<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[14px]">verified</span>
+<span class="font-caption-specs text-caption-specs text-on-surface">COSC Chronometer Certified</span>
+</div>
+<div class="flex items-center gap-1.5 bg-surface-container-low px-3 py-1.5 rounded-full flex-shrink-0">
+<span class="material-symbols-outlined text-primary text-[14px]">all_inclusive</span>
+<span class="font-caption-specs text-caption-specs text-on-surface">Guaranteed Provenance</span>
+</div>
+</div>
+</section>
+<!-- Interactive Filter & Category Tabs Bar -->
+<section class="sticky top-16 z-30 w-full bg-surface-container-lowest/90 backdrop-blur-md px-margin-mobile py-space-sm flex flex-col gap-space-xs shadow-md">
+<!-- Category Pill Carousel -->
+<div class="flex items-center gap-space-xs overflow-x-auto no-scrollbar">
+<button class="category-btn px-4 py-2 rounded-full font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all bg-primary text-on-primary" onclick="setCategoryFilter('all', this)">
+        All Pieces
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:text-primary" onclick="setCategoryFilter('complications', this)">
+        Complications
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:text-primary" onclick="setCategoryFilter('chronographs', this)">
+        Chronographs
+      </button>
+<button class="category-btn px-4 py-2 rounded-full font-label-caps-sm text-label-caps-sm uppercase tracking-wider transition-all bg-surface-container text-on-surface-variant hover:text-primary" onclick="setCategoryFilter('minimalist', this)">
+        Minimalist
+      </button>
+</div>
+<!-- Secondary Controls: Material & Sorting Action Drawer Trigger -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-space-xs">
+<span class="font-caption-specs text-caption-specs text-outline tracking-wider uppercase">Material:</span>
+<select class="bg-surface-container text-on-surface font-caption-specs text-caption-specs py-1 px-2.5 rounded focus:outline-none focus:text-primary transition-colors cursor-pointer" id="materialSelector" onchange="applyFilters()">
+<option value="all">All Alloys</option>
+<option value="ceramic">Obsidian Ceramic</option>
+<option value="titanium">Grade 5 Titanium</option>
+<option value="gold">Rose Gold &amp; Platinum</option>
+</select>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-caption-specs text-caption-specs text-outline tracking-wider uppercase">Sort:</span>
+<select class="bg-surface-container text-on-surface font-caption-specs text-caption-specs py-1 px-2.5 rounded focus:outline-none focus:text-primary transition-colors cursor-pointer" id="sortSelector" onchange="applySorting()">
+<option value="curated">Curated</option>
+<option value="val-desc">Value (High to Low)</option>
+<option value="val-asc">Value (Low to High)</option>
+</select>
+</div>
+</div>
+</section>
+<!-- Status Notification Chip (Delight Micro-Interaction) -->
+<div class="hidden px-margin-mobile py-2 bg-surface-container-high mx-margin-mobile mt-space-sm rounded-lg flex items-center justify-between transition-all" id="selectionFeedback">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[18px]">verified</span>
+<span class="font-caption-specs text-caption-specs text-on-surface" id="feedbackText">Filter applied.</span>
+</div>
+<button class="font-label-caps-sm text-label-caps-sm text-primary uppercase underline" onclick="resetFilters()">Clear</button>
+</div>
+<!-- Timepieces Editorial Cards Grid -->
+<section class="w-full px-margin-mobile py-space-md flex flex-col gap-space-lg" id="collectionContainer">
+<!-- Card 1: Atelier Luna Noir -->
+<article class="watch-card w-full flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl" data-category="minimalist" data-material="ceramic" data-price="48000">
+<!-- Media Presentation with Status Badge -->
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden flex items-center justify-center group">
+<img alt="Atelier Luna Noir bespoke timepiece" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE-9qNDWpuqtnpOx2drhZJj9OGxpFej2qtkTilRdnkBuDroaI_N1Mgis94BqmhTjQ-5LaRim6aBkw5QUUZ57AI0dWIZrSUFNWXxaztz_HDJ1sAmCFe5rZ0t8i1ZvJW6YitkgFcOQMtzU5FD8P-qWQ4vlbnC_QVQNEuHICuHsCX4ajDkakqCXholXbEGvbsQRCd9eF6Hf_FC5noYUyo6Qji19zfQ3AiiwUPAwp45LO55MkoPIvUwEVhNQ"/>
+<!-- Status Tag Top Left -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-primary uppercase">In Stock</span>
+</div>
+<!-- Reference Pill Top Right -->
+<span class="absolute top-3 right-3 font-caption-specs text-caption-specs text-outline px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+          Ref. 1801-LN
+        </span>
+</div>
+<!-- Detail Narrative Body -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-primary tracking-widest uppercase">Obsidian Minimalist</span>
+<span class="font-title-editorial text-title-editorial text-primary">$48,000 USD</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            Atelier Luna Noir
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Deep abyssal pure onyx dial framed by hand-polished zirconium carbide ceramic and solid rose gold lance hands.
+          </p>
+</div>
+<!-- Micro Specification Grid -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Calibre</span>
+<span class="text-on-surface font-medium">In-House 1801 Manual</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Case Diameter</span>
+<span class="text-on-surface font-medium">40mm • 9.2mm Profile</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Power Reserve</span>
+<span class="text-on-surface font-medium">72 Hours Twin-Barrel</span>
+</div>
+</div>
+<!-- Action Tray -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 h-11 bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-widest rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm" onclick="openSalonInquiry('Atelier Luna Noir', '48,000')">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Request Salon Viewing</span>
+</button>
+<button aria-label="Toggle full specifications" class="w-11 h-11 bg-surface-container text-on-surface-variant hover:text-primary rounded flex items-center justify-center transition-colors" onclick="toggleSpecDrawer(this)">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+<!-- Expandable Technical Blueprint (Delight Interaction) -->
+<div class="technical-drawer hidden pt-space-xs flex flex-col gap-1.5 text-caption-specs font-caption-specs text-on-surface-variant bg-surface-container-lowest p-3 rounded">
+<p class="text-primary font-medium">Atelier Geneva Standards:</p>
+<p>• Water Resistance: 50 Meters (5 ATM)</p>
+<p>• Strap: Matte alligator hand-stitched in Geneva</p>
+<p>• Buckle: Ceramic folding clasp with 18k Rose gold medallion</p>
+</div>
+</div>
+</article>
+<!-- Card 2: Chronographe Titane -->
+<article class="watch-card w-full flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl" data-category="chronographs" data-material="titanium" data-price="62000">
+<!-- Media Presentation with Status Badge -->
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden flex items-center justify-center group">
+<img alt="Chronographe Titane high horology chronograph watch" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJcqu2WtHwim8Fc1clVuY2ztf8f5chS6UsNX_1vKpF5rXX5skCXB8H58BTtuYN1OHxDlMWmUkMNz0cIrhlcgORP7ENAefAuNY0qfClxeSX4Z6kVLJdjPQqv_idlPd2SwDD6N_Xj18tKL1eWPbT-cCvlT0MEyx-48_Dbg47tnNpU6DY4vBvZzvrVdLZ_6L3YzQF5d_cK2ngqEvVISDpaMLI2foxCRAubhvl81vRG-_4J6dJ3qVqI3XAxA"/>
+<!-- Status Tag Top Left -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-secondary uppercase">Limited (1 of 25)</span>
+</div>
+<!-- Reference Pill Top Right -->
+<span class="absolute top-3 right-3 font-caption-specs text-caption-specs text-outline px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+          Ref. CT-42-08
+        </span>
+</div>
+<!-- Detail Narrative Body -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-primary tracking-widest uppercase">Aero-Engineering</span>
+<span class="font-title-editorial text-title-editorial text-primary">$62,000 USD</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            Chronographe Titane
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            Micro-blasted Grade 5 Titanium monobloc case featuring an open-architecture column wheel complication and gilded subdials.
+          </p>
+</div>
+<!-- Micro Specification Grid -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Calibre</span>
+<span class="text-on-surface font-medium">Calibre CH-9 Monopusher</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Case Diameter</span>
+<span class="text-on-surface font-medium">42mm • Integrated Titanium Bracelet</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Complication</span>
+<span class="text-on-surface font-medium">Vertical Clutch Flyback</span>
+</div>
+</div>
+<!-- Action Tray -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 h-11 bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-widest rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm" onclick="openSalonInquiry('Chronographe Titane', '62,000')">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Request Salon Viewing</span>
+</button>
+<button aria-label="Toggle full specifications" class="w-11 h-11 bg-surface-container text-on-surface-variant hover:text-primary rounded flex items-center justify-center transition-colors" onclick="toggleSpecDrawer(this)">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+<!-- Expandable Technical Blueprint -->
+<div class="technical-drawer hidden pt-space-xs flex flex-col gap-1.5 text-caption-specs font-caption-specs text-on-surface-variant bg-surface-container-lowest p-3 rounded">
+<p class="text-primary font-medium">Horological Credentials:</p>
+<p>• Frequency: 36,000 VpH (5Hz high beat precision)</p>
+<p>• Dial: Smoked sapphire crystal with laser-etched tachymetre</p>
+<p>• Weight: 84 grams complete with titanium link system</p>
+</div>
+</div>
+</article>
+<!-- Card 3: Tourbillon Squelette -->
+<article class="watch-card w-full flex flex-col bg-surface-container-low rounded-xl overflow-hidden shadow-xl" data-category="complications" data-material="gold" data-price="115000">
+<!-- Media Presentation with Status Badge -->
+<div class="relative w-full aspect-square bg-surface-container-lowest overflow-hidden flex items-center justify-center group">
+<img alt="Macro close-up studio shot of a high luxury Swiss mechanical watch open caseback showing intricate skeletonized tourbillon gear movement" class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGfp4I2LZ5W_M5XG8ElfU-3JeHxzqUtfpmTle4_0nicMWx9kvYp8parZAQBD5AU-d-whG6iOSIVlyx1miR7mGw-NBktvjdj5rpLCranyKIFroZtesTypbVt1LZo6yop1gjR8lcsmw-y4TwMjB_0xZwnYRUC9eLeMm1SM1ttfRv5y-WTwzTk4Fqb8Rndxg-pr7FyhI_qy7mtgeK3w4CKphvlCY0duIPQ0g9SVdlkfRX6pe5QEgHpZD86Q"/>
+<!-- Status Tag Top Left -->
+<div class="absolute top-3 left-3 flex items-center gap-1.5 px-2.5 py-1 rounded bg-surface-container-lowest/85 backdrop-blur-md">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-fixed"></span>
+<span class="font-label-caps-sm text-label-caps-sm text-primary uppercase">Bespoke Order</span>
+</div>
+<!-- Reference Pill Top Right -->
+<span class="absolute top-3 right-3 font-caption-specs text-caption-specs text-outline px-2 py-0.5 rounded bg-surface-container-lowest/80 backdrop-blur-sm">
+          Piece Unique
+        </span>
+</div>
+<!-- Detail Narrative Body -->
+<div class="p-space-md flex flex-col gap-space-sm bg-surface-container-low">
+<div class="flex flex-col gap-1">
+<div class="flex items-center justify-between">
+<span class="font-label-caps-sm text-label-caps-sm text-primary tracking-widest uppercase">Haute Complication</span>
+<span class="font-title-editorial text-title-editorial text-primary">$115,000 USD</span>
+</div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">
+            Tourbillon Squelette
+          </h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            One-minute flying tourbillon suspended in open air. Hand-beveled anglage, polished bridge flanks, and solid rose gold geartrain.
+          </p>
+</div>
+<!-- Micro Specification Grid -->
+<div class="bg-surface-container p-space-sm rounded-lg flex flex-col gap-1.5">
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Calibre</span>
+<span class="text-on-surface font-medium">Calibre T-01 Skeletonized</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Case Diameter</span>
+<span class="text-on-surface font-medium">41mm • 18K Honey Gold Case</span>
+</div>
+<div class="w-full h-px bg-surface-container-high"></div>
+<div class="flex justify-between items-center text-caption-specs font-caption-specs">
+<span class="text-outline uppercase">Finishing</span>
+<span class="text-on-surface font-medium">Over 240 Hours Master Hand-Anglage</span>
+</div>
+</div>
+<!-- Action Tray -->
+<div class="flex items-center gap-space-xs pt-1">
+<button class="flex-1 h-11 bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-widest rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors shadow-sm" onclick="openSalonInquiry('Tourbillon Squelette', '115,000')">
+<span class="material-symbols-outlined text-[18px]">calendar_month</span>
+<span>Request Salon Viewing</span>
+</button>
+<button aria-label="Toggle full specifications" class="w-11 h-11 bg-surface-container text-on-surface-variant hover:text-primary rounded flex items-center justify-center transition-colors" onclick="toggleSpecDrawer(this)">
+<span class="material-symbols-outlined text-[20px]">info</span>
+</button>
+</div>
+<!-- Expandable Technical Blueprint -->
+<div class="technical-drawer hidden pt-space-xs flex flex-col gap-1.5 text-caption-specs font-caption-specs text-on-surface-variant bg-surface-container-lowest p-3 rounded">
+<p class="text-primary font-medium">Atelier Geneva Standards:</p>
+<p>• Tourbillon Cage: 0.28 grams Grade 5 Titanium</p>
+<p>• Jewels: 33 Functional Rubies set in screwed Gold Chatons</p>
+<p>• Balance Spring: Breguet overcoil with variable inertia blocks</p>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State (Playful, Delightful Collector Message) -->
+<div class="hidden w-full px-margin-mobile py-space-xl flex flex-col items-center text-center gap-space-sm" id="emptyVaultState">
+<div class="w-16 h-16 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-2 shadow-inner">
+<span class="material-symbols-outlined text-[32px]">manage_search</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">The Vault is Silent</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-xs">
+      No mechanical timepiece matches your selected criteria. Reset filters or consult our Geneva atelier for bespoke commissions.
+    </p>
+<button class="px-5 py-2.5 bg-primary text-on-primary rounded font-label-caps-sm text-label-caps-sm uppercase tracking-widest mt-2 hover:bg-primary-container transition-colors" onclick="resetFilters()">
+      Show All Masterpieces
+    </button>
+</div>
+<!-- Bespoke Concierge Salon Consultation Banner -->
+<section class="w-full px-margin-mobile pt-space-sm pb-space-lg">
+<div class="w-full bg-surface-container-high rounded-xl p-space-md flex flex-col gap-space-sm relative overflow-hidden shadow-2xl">
+<!-- Ambient Backlight -->
+<div class="absolute -right-10 -bottom-10 w-44 h-44 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">room_service</span>
+<span class="font-label-caps-sm text-label-caps-sm text-primary uppercase tracking-widest">Geneva Concierge Desk</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">
+          Schedule a Private Salon Viewing
+        </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+          Experience our complications in person at our salons in Geneva, Paris, or Zurich. Virtual high-definition horological consultations available upon request.
+        </p>
+</div>
+<!-- Quick Action Buttons -->
+<div class="flex flex-col sm:flex-row gap-space-xs pt-space-xs">
+<a class="h-11 px-4 bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors" href="tel:+41228199000">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span>Direct Concierge Line</span>
+</a>
+<button class="h-11 px-4 bg-surface-container text-on-surface font-label-caps-sm text-label-caps-sm uppercase tracking-wider rounded flex items-center justify-center gap-2 hover:text-primary transition-colors" onclick="openSalonInquiry('Bespoke Consultation', 'Salon Service')">
+<span class="material-symbols-outlined text-[16px]">mail</span>
+<span>Virtual Appointment</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Interactive Salon Inquiry Modal / Bottom Sheet -->
+<div class="fixed inset-0 z-50 bg-surface-container-lowest/80 backdrop-blur-md hidden flex flex-col justify-end" id="salonModal">
+<div class="w-full bg-surface-container-high rounded-t-2xl p-space-md flex flex-col gap-space-md shadow-2xl max-w-lg mx-auto">
+<div class="flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-caps-sm text-label-caps-sm text-primary uppercase tracking-widest">Private Salon RSVP</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface" id="modalPieceTitle">Atelier Complication</h4>
+</div>
+<button class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-on-surface" onclick="closeSalonModal()">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+<div class="flex flex-col gap-3">
+<label class="font-caption-specs text-caption-specs text-outline uppercase">Collector Identity / Name</label>
+<input class="bg-surface-container text-on-surface font-body-sm text-body-sm px-3 py-2.5 rounded focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Lord / Lady / Monsieur / Madame" type="text"/>
+<label class="font-caption-specs text-caption-specs text-outline uppercase">Preferred Salon Location</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="salon-loc-btn py-2 px-3 rounded bg-surface-container text-caption-specs font-caption-specs text-on-surface text-center focus:bg-primary focus:text-on-primary" type="button">Geneva Salon</button>
+<button class="salon-loc-btn py-2 px-3 rounded bg-surface-container text-caption-specs font-caption-specs text-on-surface text-center focus:bg-primary focus:text-on-primary" type="button">Virtual HD Stream</button>
+</div>
+</div>
+<button class="w-full h-11 bg-primary text-on-primary font-label-caps-sm text-label-caps-sm uppercase tracking-widest rounded flex items-center justify-center gap-2 hover:bg-primary-container transition-colors" onclick="confirmAppointment()">
+<span>Transmit Private Request</span>
+</button>
+</div>
+</div>
+</div>
+<script>
+  let activeCategory = 'all';
+
+  function setCategoryFilter(category, btnElement) {
+    activeCategory = category;
+    document.querySelectorAll('.category-btn').forEach(btn => {
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+    });
+    btnElement.classList.remove('bg-surface-container', 'text-on-surface-variant');
+    btnElement.classList.add('bg-primary', 'text-on-primary');
+    applyFilters();
+  }
+
+  function applyFilters() {
+    const selectedMaterial = document.getElementById('materialSelector').value;
+    const cards = document.querySelectorAll('.watch-card');
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const cardCategory = card.getAttribute('data-category');
+      const cardMaterial = card.getAttribute('data-material');
+
+      const matchesCategory = (activeCategory === 'all' || cardCategory === activeCategory);
+      const matchesMaterial = (selectedMaterial === 'all' || cardMaterial === selectedMaterial);
+
+      if (matchesCategory && matchesMaterial) {
+        card.style.display = 'flex';
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    const emptyState = document.getElementById('emptyVaultState');
+    const feedbackBox = document.getElementById('selectionFeedback');
+    const feedbackText = document.getElementById('feedbackText');
+
+    if (visibleCount === 0) {
+      emptyState.classList.remove('hidden');
+    } else {
+      emptyState.classList.add('hidden');
+    }
+
+    if (activeCategory !== 'all' || selectedMaterial !== 'all') {
+      feedbackBox.classList.remove('hidden');
+      feedbackText.textContent = `Showing ${visibleCount} curated timepiece${visibleCount === 1 ? '' : 's'}`;
+    } else {
+      feedbackBox.classList.add('hidden');
+    }
+  }
+
+  function applySorting() {
+    const sortVal = document.getElementById('sortSelector').value;
+    const container = document.getElementById('collectionContainer');
+    const cards = Array.from(container.querySelectorAll('.watch-card'));
+
+    if (sortVal === 'val-desc') {
+      cards.sort((a, b) => parseInt(b.getAttribute('data-price')) - parseInt(a.getAttribute('data-price')));
+    } else if (sortVal === 'val-asc') {
+      cards.sort((a, b) => parseInt(a.getAttribute('data-price')) - parseInt(b.getAttribute('data-price')));
+    }
+
+    cards.forEach(card => container.appendChild(card));
+  }
+
+  function resetFilters() {
+    activeCategory = 'all';
+    document.getElementById('materialSelector').value = 'all';
+    document.getElementById('sortSelector').value = 'curated';
+    
+    document.querySelectorAll('.category-btn').forEach((btn, index) => {
+      if (index === 0) {
+        btn.classList.add('bg-primary', 'text-on-primary');
+        btn.classList.remove('bg-surface-container', 'text-on-surface-variant');
+      } else {
+        btn.classList.remove('bg-primary', 'text-on-primary');
+        btn.classList.add('bg-surface-container', 'text-on-surface-variant');
+      }
+    });
+
+    applyFilters();
+    applySorting();
+  }
+
+  function toggleSpecDrawer(btn) {
+    const card = btn.closest('.watch-card');
+    const drawer = card.querySelector('.technical-drawer');
+    drawer.classList.toggle('hidden');
+    
+    const icon = btn.querySelector('.material-symbols-outlined');
+    if (drawer.classList.contains('hidden')) {
+      icon.textContent = 'info';
+    } else {
+      icon.textContent = 'expand_less';
+    }
+  }
+
+  function openSalonInquiry(title, price) {
+    document.getElementById('modalPieceTitle').textContent = `${title} ($${price} USD)`;
+    document.getElementById('salonModal').classList.remove('hidden');
+  }
+
+  function closeSalonModal() {
+    document.getElementById('salonModal').classList.add('hidden');
+  }
+
+  function confirmAppointment() {
+    const modal = document.getElementById('salonModal');
+    modal.classList.add('hidden');
+    const feedbackBox = document.getElementById('selectionFeedback');
+    const feedbackText = document.getElementById('feedbackText');
+    feedbackBox.classList.remove('hidden');
+    feedbackText.textContent = "Salon invitation dispatched to Horology Concierge.";
+  }
+</script><footer class="w-full bg-surface-container-lowest px-margin-mobile pt-space-lg pb-28 flex flex-col gap-space-md mt-space-lg"><div class="flex flex-col gap-space-xs"><span class="font-label-caps-lg text-label-caps-lg text-primary tracking-[0.2em] uppercase">ATELIER HAUTE HORLOGERIE</span><p class="font-body-sm text-body-sm text-on-surface-variant">Geneva • Vallée de Joux • Paris</p></div><div class="flex flex-col gap-space-xs text-on-surface-variant font-caption-specs text-caption-specs"><p>Private Salon &amp; Concierge: +41 22 819 9000</p><p>By Appointment Exclusively • client@atelier-horlogerie.ch</p></div><div class="flex items-center gap-space-md text-on-surface-variant pt-space-xs"><a class="font-caption-specs text-caption-specs uppercase hover:text-primary transition-colors" href="#">Instagram</a><a class="font-caption-specs text-caption-specs uppercase hover:text-primary transition-colors" href="#">Journal</a><a class="font-caption-specs text-caption-specs uppercase hover:text-primary transition-colors" href="#">Archive</a><a class="font-caption-specs text-caption-specs uppercase hover:text-primary transition-colors" href="#">Patrons</a></div><span class="font-caption-specs text-caption-specs text-outline pt-space-xs">© MMXXIV ATELIER HORLOGERIE S.A. ALL RIGHTS RESERVED.</span></footer></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface-container-lowest/80 backdrop-blur-xl shadow-[0_-4px_16px_rgba(0,0,0,0.4)]" data-active-classes="text-primary"><div class="h-16 px-space-sm flex items-center justify-around"><a class="flex flex-col items-center justify-center w-14 h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="curated-gallery" href="#"><span class="material-symbols-outlined text-[20px]">watch</span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest mt-0.5 scale-90">Vault</span></a><a aria-current="page" class="flex flex-col items-center justify-center w-14 h-11 transition-colors text-primary" data-path="craftsmanship" href="#"><span class="material-symbols-outlined text-[20px]">precision_manufacturing</span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest mt-0.5 scale-90">Craft</span></a><a class="flex flex-col items-center justify-center w-14 h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="atelier-heritage" href="#"><span class="material-symbols-outlined text-[20px]">auto_stories</span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest mt-0.5 scale-90">Story</span></a><a class="flex flex-col items-center justify-center w-14 h-11 text-on-surface-variant hover:text-primary transition-colors" data-path="concierge-salon" href="#"><span class="material-symbols-outlined text-[20px]">room_service</span><span class="font-label-caps-sm text-label-caps-sm uppercase tracking-widest mt-0.5 scale-90">Salon</span></a></div></nav></body></html>

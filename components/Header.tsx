@@ -89,11 +89,11 @@ export default function Header() {
               <span className="material-symbols-outlined text-[20px]">search</span>
             </button>
 
-            {/* Account placeholder */}
+            {/* Account / Patron Enclave */}
             <Link
               href="/account"
-              aria-label="Account"
-              className="hidden md:flex w-10 h-10 items-center justify-center text-platinum hover:text-gold transition-colors"
+              aria-label="Patron Vault & Account"
+              className="flex w-10 h-10 items-center justify-center text-platinum hover:text-gold transition-colors"
             >
               <span className="material-symbols-outlined text-[20px]">person</span>
             </Link>

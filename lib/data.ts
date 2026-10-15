@@ -1,6 +1,6 @@
 // ──────────────────────────────────────────────────────────────────────────────
-// MOCK DATA — Replace with Supabase queries in a later phase.
-// All data here is demonstration-only and not connected to any database.
+// ATELIER DATA STORE
+// Prices in Nigerian Naira (NGN ₦)
 // ──────────────────────────────────────────────────────────────────────────────
 
 export interface WatchVariant {
@@ -22,7 +22,7 @@ export interface Watch {
   collection: string;
   category: "complications" | "chronographs" | "minimalist" | "tourbillon";
   material: "ceramic" | "titanium" | "gold" | "steel";
-  price: number;
+  price: number; // in NGN
   reference: string;
   edition?: string;
   badge?: string;
@@ -41,7 +41,7 @@ export interface Watch {
 
 const WATCH_IMAGES = {
   lunaNoirDial:
-    "/atelier_luna_noir_ref._1801.png",
+    "/front_luxury_studio_photograph_of_a_magnificent_minimalist_luxury_wristwatch.png",
   chronoTitaneDial:
     "/front_luxury_studio_photograph_of_an_avant_garde_titanium_luxury_chronograph.png",
   minimalistDial:
@@ -49,7 +49,7 @@ const WATCH_IMAGES = {
   movement:
     "/macro_close_up_studio_shot_of_a_high_luxury_swiss_mechanical_watch_open.png",
   collection:
-    "/atelier_the_collection.png",
+    "/front_luxury_studio_photograph_of_a_magnificent_minimalist_luxury_wristwatch.png",
   acquisitionTray:
     "/atelier_acquisition_tray.png",
 };
@@ -62,7 +62,7 @@ export const watches: Watch[] = [
     collection: "Luna",
     category: "minimalist",
     material: "ceramic",
-    price: 48000,
+    price: 72000000, // ₦72,000,000
     reference: "AT-1801-NOIR",
     edition: "Limited 50",
     badge: "Pièce Unique",
@@ -101,7 +101,7 @@ export const watches: Watch[] = [
     collection: "Chronos",
     category: "chronographs",
     material: "titanium",
-    price: 62000,
+    price: 93000000, // ₦93,000,000
     reference: "AT-2024-CT",
     edition: "Numbered Edition",
     badge: "Numbered Edition",
@@ -139,7 +139,7 @@ export const watches: Watch[] = [
     collection: "Haute Horlogerie",
     category: "complications",
     material: "gold",
-    price: 185000,
+    price: 275000000, // ₦275,000,000
     reference: "AT-HC-001-PLAT",
     edition: "Unique Piece",
     badge: "Unique Piece",
@@ -177,7 +177,7 @@ export const watches: Watch[] = [
     collection: "Tourbillon",
     category: "tourbillon",
     material: "steel",
-    price: 96000,
+    price: 144000000, // ₦144,000,000
     reference: "AT-TV-3201",
     badge: "COSC Certified",
     inStock: true,
@@ -217,7 +217,14 @@ export function getRelatedWatches(ids: string[]): Watch[] {
   return watches.filter((w) => ids.includes(w.id));
 }
 
-export function formatPrice(price: number, currency = "USD"): string {
+export function formatPrice(price: number, currency = "NGN"): string {
+  if (currency === "NGN") {
+    return `₦${new Intl.NumberFormat("en-NG", {
+      minimumFractionDigits: 0,
+      maximumFractionDigits: 0,
+    }).format(price)}`;
+  }
+
   return new Intl.NumberFormat("en-US", {
     style: "currency",
     currency,

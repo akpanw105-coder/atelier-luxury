@@ -160,10 +160,10 @@ export default function HomePage() {
             <div className="lg:col-span-3 relative aspect-square bg-charcoal overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-b from-gold/10 via-transparent to-transparent opacity-50" />
               <Image
-                src="/atelier_luna_noir_ref._1801.png"
+                src="/front_luxury_studio_photograph_of_a_magnificent_minimalist_luxury_wristwatch.png"
                 alt="Atelier Luna Noir Ref. 1801 dial face"
                 fill
-                className="object-contain p-8"
+                className="object-cover"
                 sizes="(max-width: 1024px) 100vw, 60vw"
               />
               <div className="absolute top-5 left-5">
@@ -213,7 +213,7 @@ export default function HomePage() {
                 <span className="text-body-sm text-gold">Strictly 50 Pieces</span>
               </div>
 
-              <Link href="/collection/atelier-luna-noir" className="btn-primary">
+              <Link href="/checkout" className="btn-primary">
                 Acquire Timepiece
                 <span className="material-symbols-outlined text-[16px]">lock</span>
               </Link>

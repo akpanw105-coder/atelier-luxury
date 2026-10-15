@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 import { Watch, formatPrice } from "@/lib/data";
+import { useBag } from "@/lib/bag-context";
 
 interface WatchCardProps {
   watch: Watch;
@@ -8,6 +12,22 @@ interface WatchCardProps {
 }
 
 export default function WatchCard({ watch, priority = false }: WatchCardProps) {
+  const { addItem } = useBag();
+  const router = useRouter();
+
+  const handleOrderNow = (e: React.MouseEvent) => {
+    e.preventDefault();
+    addItem({
+      id: `${watch.id}-default`,
+      slug: watch.slug,
+      name: watch.name,
+      reference: watch.reference,
+      price: watch.price,
+      image: watch.images.dial,
+    });
+    router.push("/checkout");
+  };
+
   return (
     <article className="watch-card group relative flex flex-col">
       {/* Image */}
@@ -68,13 +88,24 @@ export default function WatchCard({ watch, priority = false }: WatchCardProps) {
           ))}
         </div>
 
-        <Link
-          href={`/collection/${watch.slug}`}
-          className="btn-ghost w-full text-center"
-          aria-label={`View ${watch.name} details`}
-        >
-          Inquire with Concierge
-        </Link>
+        {/* CTAs */}
+        <div className="flex flex-col gap-2">
+          <button
+            onClick={handleOrderNow}
+            className="btn-primary w-full text-center"
+            aria-label={`Order ${watch.name} now`}
+          >
+            <span className="material-symbols-outlined text-[16px]">lock</span>
+            Order Now
+          </button>
+          <Link
+            href={`/collection/${watch.slug}`}
+            className="btn-ghost w-full text-center"
+            aria-label={`View ${watch.name} details`}
+          >
+            Inquire with Concierge
+          </Link>
+        </div>
       </div>
     </article>
   );

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { Watch, formatPrice, WatchVariant } from "@/lib/data";
@@ -24,6 +25,7 @@ export default function ProductPageClient({
   const [added, setAdded] = useState(false);
 
   const { addItem } = useBag();
+  const router = useRouter();
 
   const caseVariants  = watch.variants.filter((v) => v.type === "case");
   const strapVariants = watch.variants.filter((v) => v.type === "strap");
@@ -40,7 +42,10 @@ export default function ProductPageClient({
       selectedStrap: selectedStrap?.label,
     });
     setAdded(true);
-    setTimeout(() => setAdded(false), 3000);
+    // Navigate to checkout after a short confirmation flash
+    setTimeout(() => {
+      router.push("/checkout");
+    }, 600);
   };
 
   return (
@@ -260,10 +265,10 @@ export default function ProductPageClient({
                     </>
                   )}
                 </button>
-                <button className="btn-ghost w-full">
+                <Link href="/checkout" className="btn-ghost w-full flex items-center justify-center gap-2">
                   <span className="material-symbols-outlined text-[18px] text-gold">meeting_room</span>
                   Request Concierge Salon Viewing
-                </button>
+                </Link>
               </div>
 
               {/* Trust signals */}
